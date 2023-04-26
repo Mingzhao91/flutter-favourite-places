@@ -12,7 +12,7 @@ class _LocationInputState extends State<LocationInput> {
   Location? _pickedLocation;
   var _isGettingLocation = false;
 
-  void _getCUrrentLocation() async {
+  void _getCurrentLocation() async {
     Location location = Location();
 
     bool serviceEnabled;
@@ -77,7 +77,7 @@ class _LocationInputState extends State<LocationInput> {
             TextButton.icon(
               icon: const Icon(Icons.location_on),
               label: const Text('Get Current Location'),
-              onPressed: _getCUrrentLocation,
+              onPressed: _getCurrentLocation,
             ),
             TextButton.icon(
               icon: const Icon(Icons.map),
