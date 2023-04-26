@@ -9,8 +9,13 @@ class UserPlacesNotifier extends StateNotifier<List<Place>> {
   void addPlace(
     String title,
     File image,
+    PlaceLocation location,
   ) {
-    final newPlace = Place(title: title, image: image);
+    final newPlace = Place(
+      title: title,
+      image: image,
+      location: location,
+    );
     state = [...state, newPlace];
   }
 }
