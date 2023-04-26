@@ -20,7 +20,6 @@ class PlacesList extends StatelessWidget {
         ),
       );
     }
-    ;
 
     return ListView.builder(
       itemCount: places.length,
